@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="imgspg2/iconeDCEBranco.png" type="image/x-icon">
+    <link rel="stylesheet" href="pg2.css">
+    <title>Resumo aulas pg 2</title>
+</head>
+
+<header>
+    <div>
+        <a href="../index/index.html">
+            <img src="imgsPg2/iconeDCEBranco.png" alt="Logo DCE" class="logo">
+            <span class="textLogo">Mova-Se<br>o DCE é seu</span>
+        </a>
+
+    </div>
+
+    <nav>
+        <a href="../index/index.html">Resumo&nbsp;HTML</a>
+        <a href="../pg2/pg2.html">Resumo&nbsp;CSS</a>
+        <a href="../pg3/pg3.html">Resumo&nbsp;Geral</a>
+        <a href="../pgProjetoFinal/pgProjetoFinal.html">Projeto&nbsp;final</a>
+    </nav>
+
+    <a href="https://www.instagram.com/dcemovase/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+</header>
+
+<body>
+    <div class="pegaTudo">
+        <h1 class="title1">Resumo aula 4</h1>
+        <div class="aula1">
+            <div>
+                <h2>Seletores em CSS</h2>
+                <span>São padrões usados para selecionar os elementos (tags) HTML aos quais você deseja aplicar estilos.
+                    Eles são chamados DENTRO da tag html</span>
+
+                <br><br>
+
+                <span>Temos o "<strong class="class">class</strong>" que sua sintaxe é: < tag class="xxx">
+                        < /tag>. Para chamar ele no CSS usamos o ".class"</span>
+
+                <br><br>
+
+                <span>Temos também o "<strong id="id">id</strong>" que sua sintaxe é: < tag id="xxx">
+                        < /tag>. Para chamar ele no CSS usamos o "#id"</span>
+
+                <br><br>
+
+                <h2>Propriedades</h2>
+                <span>Temos o "<strong>background-color</strong>" para mudar a cor do fundo, o "<strong>color</strong>"
+                    para mudar as
+                    cores das letras, o "<strong>font size</strong>" para alterar o tamanho das letras, a
+                    "<strong>margin</strong>" para espaçamentos
+                    EXTERNOS e o "<strong>padding</strong>" para espaçamentos INTERNOS </span>
+                <span>Você sempre vai ver o HTML e o CSS andando lado a lado.</span>
+                <br><br>
+            </div>
+            <div>
+                <img src="imgsPg2/img1.png" alt="Propriedades" width="100%" style="border-radius: 32px;">
+            </div>
+
+        </div>
+
+        <h1 class="title2">Resumo aula 5</h1>
+        <div class="aula2">
+            <div>
+                <h2>Box Model</h2>
+                <span>Cada elemento HTML é considerado uma caixa retangular, e essa caixa pode ser dividida em
+                    quatro áreas principais: conteúdo, preenchimento, borda e margem.</span>
+
+                <br><br>
+
+                <h3 class="conteudo">Conteúdo</h3>
+                <span class="conteudo">O conteúdo da caixa é a área onde o conteúdo real do elemento, como texto,
+                    imagens ou outros
+                    elementos HTML, é exibido. É a parte interna da caixa onde o conteúdo é inserido.</span>
+
+                <br><br>
+
+                <h3 class="padding">Preenchimento</h3>
+                <span class="padding">O preenchimento da caixa é uma área transparente ao redor do conteúdo dentro da
+                    borda. Ele cria
+                    espaço entre o conteúdo e a borda da caixa. O preenchimento é útil para adicionar espaço entre o
+                    conteúdo e a borda, melhorando a legibilidade e a estética do elemento.</span>
+
+                <br><br>
+
+                <h3 class="borda">Borda</h3>
+                <span class="borda">A borda da caixa é uma linha que envolve o conteúdo e o preenchimento. Ela define o
+                    limite externo
+                    do elemento e pode ter um estilo, largura e cor definidos por CSS. A borda é opcional e pode ser
+                    omitida se não for necessária.</span>
+
+                <br><br>
+
+                <h3 class="margin">Margem</h3>
+                <span class="margin">A margem da caixa é uma área transparente ao redor da borda externa da caixa. Ela
+                    cria espaço
+                    entre a borda do elemento e outros elementos vizinhos na página. A margem é útil para controlar o
+                    espaçamento entre os elementos e criar layouts visualmente agradáveis.</span>
+
+            </div>
+
+            <br>
+
+            <div>
+                <img src="imgsPg2/BOX.png" alt="BoxModel" width="100%" style="border-radius: 32px;">
+            </div>
+        </div>
+
+        <h1 class="title1">Resumo aula 6</h1>
+        <div class="aula3">
+            <div>
+                <h2>Media queries</h2>
+                <span>Media queries são um recurso do CSS que permite adaptar o estilo de uma página com base no
+                    dispositivo do usuário.</span>
+                <br><br>
+                <span>Com media queries, você pode definir diferentes estilos CSS para diferentes condições. Por
+                    exemplo, você pode ter um estilo para telas grandes de desktop e outro estilo para telas menores de
+                    dispositivos móveis.</span>
+                <br><br>
+                <h2>Breakpoints</h2>
+                <span>Breakpoints são pontos específicos de largura da tela em que o layout de uma página é ajustado
+                    para garantir uma experiência de usuário adequada.</span>
+                <br><br>
+                <span>Eles são usados em conjunto com media queries. Você define breakpoints em larguras de tela
+                    específicas e, em seguida, usa media queries para aplicar estilos diferentes quando a largura da
+                    tela atinge esses pontos.</span>
+                <br><br>
+                <h2>Imagens Responsivas</h2>
+                <span>Para fazer a imagem se adaptar ao site é muito simples, basta colocar o width dela como 100% e
+                    dessa forma ela vai ocupar todo o espaço disponível e se o usuário tiver uma tela menor a imagem vai
+                    se adaptar para a tela dele.</span>
+                <br><br>
+                <span>Eles são usados em conjunto com media queries. Você define breakpoints em larguras de tela
+                    específicas e, em seguida, usa media queries para aplicar estilos diferentes quando a largura da
+                    tela atinge esses pontos.</span>
+            </div>
+            <div>
+                <img src="imgsPg2/mediaQuerieImg.png" alt="mediaQuerie" width="100%">
+                <br><br>
+                <img src="imgsPg2/Breakpoints.png" alt="Breakpoints" width="100%">
+            </div>
+        </div>
+
+        <div class="aula3Mobile">
+            <div>
+                <h2>Media queries</h2>
+                <span>Media queries são um recurso do CSS que permite adaptar o estilo de uma página com base no
+                    dispositivo do usuário.</span>
+                <br><br>
+                <span>Com media queries, você pode definir diferentes estilos CSS para diferentes condições. Por
+                    exemplo, você pode ter um estilo para telas grandes de desktop e outro estilo para telas menores de
+                    dispositivos móveis.</span>
+                <br><br>
+                <img src="imgsPg2/mediaQuerieImg.png" alt="mediaQuerie" width="100%">
+                <br><br>
+                <h2>Breakpoints</h2>
+                <span>Breakpoints são pontos específicos de largura da tela em que o layout de uma página é ajustado
+                    para garantir uma experiência de usuário adequada.</span>
+                <br><br>
+                <span>Eles são usados em conjunto com media queries. Você define breakpoints em larguras de tela
+                    específicas e, em seguida, usa media queries para aplicar estilos diferentes quando a largura da
+                    tela atinge esses pontos.</span>
+                <br><br>
+
+                <img src="imgsPg2/Breakpoints.png" alt="Breakpoints" width="100%">
+
+                <br><br>
+
+                <h2>Imagens Responsivas</h2>
+                <span>Para fazer a imagem se adaptar ao site é muito simples, basta colocar o width dela como 100% e
+                    dessa forma ela vai ocupar todo o espaço disponível e se o usuário tiver uma tela menor a imagem vai
+                    se adaptar para a tela dele.</span>
+                <br><br>
+                <span>Eles são usados em conjunto com media queries. Você define breakpoints em larguras de tela
+                    específicas e, em seguida, usa media queries para aplicar estilos diferentes quando a largura da
+                    tela atinge esses pontos.</span>
+            </div>
+            <div>
+                
+                <br>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f07fda0370.js" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div>
+        <a href="../index/index.html">
+            <img src="imgsPg2/iconeDCEBranco.png" alt="Logo DCE" class="logo">
+            <span class="textLogo">Mova-Se<br>o DCE é seu</span>
+        </a>
+
+    </div>
+
+    <nav>
+        <a href="../index/index.html">Resumo&nbsp;HTML</a>
+        <a href="../pg2/pg2.html">Resumo&nbsp;CSS</a>
+        <a href="../pg3/pg3.html">Resumo&nbsp;Geral</a>
+        <a href="../pgProjetoFinal/pgProjetoFinal.html">Projeto&nbsp;final</a>
+    </nav>
+
+    <a href="https://www.instagram.com/dcemovase/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</footer>
+
+</html>

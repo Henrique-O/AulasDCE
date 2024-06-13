@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --verdeLeve: #e1f0da;
+  --verdeClaro: #d4e7c5;
+  --verde: #bfd8af;
+  --verdeEscuro: #99bc85;
+  --branco: #ffffff;
+}
+
+@media screen and (max-width: 1288px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verdeEscuro);
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  header > div > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  header > div > a > .logo {
+    width: 25%;
+  }
+
+  .textLogo {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  nav > a {
+    color: var(--branco);
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav > a:hover {
+    color: var(--verdeClaro);
+    transition: 0.3s;
+  }
+
+  header > a > .fa-instagram {
+    display: none;
+  }
+
+  body > .pegaTudo {
+    background-color: var(--verdeLeve);
+    padding-top: 32px;
+  }
+
+  body > .pegaTudo > .title1 {
+    background-color: var(--verdeEscuro);
+    color: var(--branco);
+    font-size: 32px;
+    border-radius: 16px 0 0 16px;
+    margin: 0 0 0 24px;
+    padding: 16px;
+  }
+
+  body > .pegaTudo > .aula1 {
+    padding: 24px;
+  }
+
+  body > .pegaTudo > .aula1 > div > h1 {
+    font-size: 24px;
+  }
+
+  body > .pegaTudo > .aula1 > div > h2 {
+    font-size: 16px;
+  }
+
+  body > .pegaTudo > .aula1 > span {
+    font-size: 16px;
+  }
+
+  .display1 {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .caixa {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: yellow;
+  }
+
+  .display2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display3 {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display5 {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display6 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display7 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  body > .pegaTudo > .title2 {
+    background-color: var(--verdeEscuro);
+    color: var(--branco);
+    text-align: right;
+    font-size: 32px;
+    border-radius: 0 16px 16px 0;
+    margin: 0 24px 0 0;
+    padding: 16px;
+  }
+
+  body > .pegaTudo > .aula2 {
+    background-image: url(imgsPg3/iconeDCEBranco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    padding: 24px;
+  }
+
+  body > .pegaTudo > .aula2 > h2 {
+    font-size: 32px;
+  }
+
+  body > .pegaTudo > .aula2 > span {
+    font-size: 24px;
+  }
+
+  body > .pegaTudo > .aula3 {
+    padding: 24px;
+  }
+
+  body > .pegaTudo > .aula3 > h2 {
+    font-size: 32px;
+  }
+
+  body > .pegaTudo > .aula3 > span {
+    font-size: 24px;
+  }
+
+  .parallax {
+    background-image: url(imgsPg3/dceInsta.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    min-height: 200px;
+  }
+
+  .parallax2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgsPg3/praia.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    min-height: 200px;
+  }
+
+  .parallax2 > span {
+    background-color: var(--branco);
+    color: black;
+    padding: 16px;
+    border-radius: 32px;
+  }
+
+  body > .pegaTudo > .title3 {
+    background: linear-gradient(to right, #e1f0da, #99bc85);
+    color: var(--branco);
+    text-align: right;
+    font-size: 48px;
+    border-radius: 0 16px 16px 0;
+    margin: 0 20px 0 0;
+    padding: 16px;
+  }
+
+  body > .pegaTudo > .div1 > .text {
+    font-size: 16px;
+  }
+
+  .gradientes {
+    /* Feito para alinhar e espaçar*/
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .gradienteLinear {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right, #ff0000, #000000);
+  }
+
+  .gradienteLinear2 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #ff0000, #0dff00);
+  }
+
+  .gradienteLinear3 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to top, #ff0000, #00e5ff);
+  }
+
+  .gradienteLinear4 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to left, #ff0000, #d4ff00);
+  }
+
+  .gradienteLinear5 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom right, #00ff1a, #8d8d8d);
+  }
+
+  .gradienteLinear6 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom left, #00ff1a, #00f7ff);
+  }
+
+  .gradienteLinear7 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to top left, #ff0000, #0000ff);
+  }
+
+  .gradienteLinear8 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to top right, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at top, #ffae00, #ffffff);
+  }
+
+  .gradienteRadial2 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at bottom, #00fff2, #1aff00);
+  }
+
+  .gradienteRadial3 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at top left, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial4 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at top right, #0000ff, #ff0000);
+  }
+
+  .gradienteRadial5 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at bottom left, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial6 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at bottom right, #0000ff, #ff0000);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verdeEscuro);
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  footer > div > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  footer > div > a > .logo {
+    width: 25%;
+  }
+
+  .textLogo {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  nav > a {
+    color: var(--branco);
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav > a:hover {
+    color: var(--verdeClaro);
+    transition: 0.3s;
+  }
+
+  footer > a > .fa-instagram {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1288px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--verdeEscuro);
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 180px;
+  }
+
+  header > div > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .textLogo {
+    color: var(--branco);
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav > a {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav > a:hover {
+    color: var(--verdeClaro);
+    transition: 0.3s;
+  }
+
+  header > a > .fa-instagram {
+    background-color: var(--branco);
+    color: var(--verdeEscuro);
+    font-size: 32px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  header > a > .fa-instagram:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: 0.3s;
+  }
+
+  body > .pegaTudo {
+    background-color: var(--verdeLeve);
+    padding-top: 32px;
+  }
+
+  body > .pegaTudo > .title1 {
+    background-color: var(--verdeEscuro);
+    color: var(--branco);
+    font-size: 48px;
+    border-radius: 16px 0 0 16px;
+    margin: 0 0 32px 180px;
+    padding: 16px;
+  }
+
+  body > .pegaTudo > .aula1 {
+    padding: 32px 180px;
+  }
+
+  body > .pegaTudo > .aula1 > h2 {
+    font-size: 32px;
+  }
+
+  body > .pegaTudo > .aula1 > span {
+    font-size: 24px;
+  }
+
+  .display1 {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .caixa {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: yellow;
+  }
+
+  .display2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display3 {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display5 {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display6 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  .display7 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: purple;
+    padding: 32px;
+  }
+
+  body > .pegaTudo > .title2 {
+    background-color: var(--verdeEscuro);
+    color: var(--branco);
+    text-align: right;
+    font-size: 48px;
+    border-radius: 0 16px 16px 0;
+    margin: 0 180px 32px 0;
+    padding: 16px;
+  }
+
+  body > .pegaTudo > .aula2 {
+    background-image: url(imgsPg3/iconeVerde.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 25% 100%;
+    padding: 32px 180px;
+  }
+
+  body > .pegaTudo > .aula2 > h2 {
+    font-size: 32px;
+  }
+
+  body > .pegaTudo > .aula2 > span {
+    font-size: 24px;
+  }
+
+  body > .pegaTudo > .aula3 {
+    padding: 32px 180px;
+  }
+
+  body > .pegaTudo > .aula3 > h2 {
+    font-size: 32px;
+  }
+
+  body > .pegaTudo > .aula3 > span {
+    font-size: 24px;
+  }
+
+  .parallax {
+    background-image: url(imgsPg3/dceInsta.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 50% 100%;
+    min-height: 200px;
+  }
+
+  .parallax2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgsPg3/praia.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 65% 100%;
+    min-height: 400px;
+  }
+
+  .parallax2 > span {
+    background-color: var(--branco);
+    color: black;
+    padding: 16px;
+    border-radius: 32px;
+  }
+
+  body > .pegaTudo > .title3 {
+    background: linear-gradient(to right, #e1f0da, #99bc85);
+    color: var(--branco);
+    text-align: right;
+    font-size: 48px;
+    border-radius: 0 16px 16px 0;
+    margin: 0 180px 32px 0;
+    padding: 16px;
+  }
+
+  .gradientes {
+    /* Feito para alinhar e espaçar*/
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .gradienteLinear {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #ff0000, #000000);
+  }
+
+  .gradienteLinear2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #ff0000, #0dff00);
+  }
+
+  .gradienteLinear3 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, #ff0000, #00e5ff);
+  }
+
+  .gradienteLinear4 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #ff0000, #d4ff00);
+  }
+
+  .gradienteLinear5 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #00ff1a, #8d8d8d);
+  }
+
+  .gradienteLinear6 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom left, #00ff1a, #00f7ff);
+  }
+
+  .gradienteLinear7 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top left, #ff0000, #0000ff);
+  }
+
+  .gradienteLinear8 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top right, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top, #ffae00, #ffffff);
+  }
+
+  .gradienteRadial2 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at bottom, #00fff2, #1aff00);
+  }
+
+  .gradienteRadial3 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top left, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial4 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top right, #0000ff, #ff0000);
+  }
+
+  .gradienteRadial5 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at bottom left, #ff0000, #0000ff);
+  }
+
+  .gradienteRadial6 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at bottom right, #0000ff, #ff0000);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--verdeEscuro);
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 180px;
+  }
+
+  footer > div > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .textLogo {
+    color: var(--branco);
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav > a {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav > a:hover {
+    color: var(--verdeClaro);
+    transition: 0.3s;
+  }
+
+  footer > a > .fa-instagram {
+    background-color: var(--branco);
+    color: var(--verdeEscuro);
+    font-size: 32px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  footer > a > .fa-instagram:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: 0.3s;
+  }
+}
