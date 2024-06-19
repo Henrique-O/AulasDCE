@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  :root {
+    --verdeLeve: #e1f0da;
+    --verdeClaro: #d4e7c5;
+    --verde: #bfd8af;
+    --verdeEscuro: #99bc85;
+    --branco: #ffffff;
+  }
+  
+  @media screen and (max-width: 1288px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--verdeEscuro);
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px;
+    }
+  
+    header > div > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    header > div > a >.logo {
+      width: 25%;
+    }
+  
+    .textLogo {
+      color: var(--branco);
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    nav > a {
+      color: var(--branco);
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    nav > a:hover {
+      color: var(--verdeClaro);
+      transition: 0.3s;
+    }
+  
+    header > a > .fa-instagram {
+      display: none;
+    }
+  
+    body > .pegaTudo {
+      background-color: var(--verdeLeve);
+      padding-top: 32px;
+    }
+  
+    body > .pegaTudo > .title1 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      font-size: 32px;
+      border-radius: 16px 0 0 16px;
+      margin: 0 0 0 24px;
+      padding: 16px;
+    }
+  
+    body > .pegaTudo > .aula1 {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      text-align: justify;
+      padding: 24px;
+    }
+  
+    body > .pegaTudo > .aula1 > h2 {
+      font-size: 32px;
+    }
+  
+    body > .pegaTudo > .aula1 > span {
+      font-size: 24px;
+    }
+  
+    .btnAula1 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      text-decoration: none;
+      font-size: 16px;
+      padding: 16px;
+      border-radius: 16px;
+    }
+  
+    .btnAula1:hover {
+      background-color: var(--verde);
+      transition: 0.3s;
+    }
+  
+    body > .pegaTudo > .title2 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      text-align: right;
+      font-size: 32px;
+      border-radius: 0 16px 16px 0;
+      margin: 0 24px 0 0;
+      padding: 16px;
+    }
+  
+    body > .pegaTudo > .aula2 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: justify;
+      gap: 32px;
+      padding: 24px;
+    }
+  
+    body > .pegaTudo > .aula2 > h2 {
+      font-size: 32px;
+    }
+  
+    body > .pegaTudo > .aula2 > span {
+      font-size: 24px;
+    }
+  
+    body > .pegaTudo > .aula3 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: justify;
+      gap: 32px;
+      padding: 24px;
+    }
+  
+  
+    body > .pegaTudo > .aula3 > h2 {
+      font-size: 32px;
+    }
+  
+    body > .pegaTudo > .aula3 > span {
+      font-size: 24px;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--verdeEscuro);
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px;
+    }
+  
+    footer > div > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    footer > div > a >.logo {
+      width: 25%;
+    }
+  
+    .textLogo {
+      color: var(--branco);
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    nav > a {
+      color: var(--branco);
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    nav > a:hover {
+      color: var(--verdeClaro);
+      transition: 0.3s;
+    }
+  
+    footer > a > .fa-instagram {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1288px) {
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: var(--verdeEscuro);
+      justify-content: space-between;
+      gap: 32px;
+      padding: 32px 180px;
+    }
+  
+    header > div > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    .logo {
+      width: 25%;
+    }
+  
+    .textLogo {
+      color: var(--branco);
+      font-size: 32px;
+      font-weight: bold;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
+  
+    header >nav > a {
+      color: var(--branco);
+      font-size: 32px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    nav > a:hover {
+      color: var(--verdeClaro);
+      transition: 0.3s;
+    }
+  
+    header > a > .fa-instagram {
+      background-color: var(--branco);
+      color: var(--verdeEscuro);
+      font-size: 64px;
+      padding: 16px;
+      border-radius: 16px;
+    }
+  
+    header > a > .fa-instagram:hover {
+      background-color: var(--verde);
+      color: var(--branco);
+      transition: 0.3s;
+    }
+  
+    body > .pegaTudo {
+      background-color: var(--verdeLeve);
+      padding-top: 32px;
+    }
+  
+    body > .pegaTudo > .title1 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      font-size: 48px;
+      border-radius: 16px 0 0 16px;
+      margin: 0 0 32px 180px;
+      padding: 16px;
+    }
+  
+    body > .pegaTudo > .aula1 {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      align-items: center;
+      text-align: justify;
+      padding: 32px 180px 48px 180px;
+    }
+  
+    body > .pegaTudo > .aula1 > div {
+      width: 50%;
+    }
+  
+    body > .pegaTudo > .aula1 > div > h2 {
+      font-size: 48px;
+    }
+  
+    body > .pegaTudo > .aula1 > div > span {
+      font-size: 32px;
+    }
+  
+    .btnAula1 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      text-decoration: none;
+      font-size: 24px;
+      padding: 16px;
+      border-radius: 16px;
+    }
+  
+    .btnAula1:hover {
+      background-color: var(--verde);
+      transition: 0.3s;
+    }
+  
+    body > .pegaTudo > .title2 {
+      background-color: var(--verdeEscuro);
+      color: var(--branco);
+      text-align: right;
+      font-size: 64px;
+      border-radius: 0 16px 16px 0;
+      margin: 0 180px 32px 0;
+      padding: 16px;
+    }
+  
+    body > .pegaTudo > .aula2 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      text-align: justify;
+      gap: 32px;
+      padding: 32px 180px;
+    }
+  
+    body > .pegaTudo > .aula2 >  div > div > h2 {
+      font-size: 48px;
+    }
+  
+    body > .pegaTudo > .aula2 > div > span {
+      font-size: 32px;
+    }
+  
+    body > .pegaTudo > .aula3 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      text-align: justify;
+      gap: 32px;
+      padding: 32px 180px;
+    }
+  
+    body > .pegaTudo > .aula3 > div {
+      width: 50%;
+    }
+  
+    body > .pegaTudo > .aula3 > div > h2 {
+      font-size: 48px;
+    }
+  
+    body > .pegaTudo > .aula3 > div > span {
+      font-size: 32px;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: var(--verdeEscuro);
+      justify-content: space-between;
+      gap: 32px;
+      padding: 32px 180px;
+    }
+  
+    footer > div > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    .logo {
+      width: 25%;
+    }
+  
+    .textLogo {
+      color: var(--branco);
+      font-size: 32px;
+      font-weight: bold;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
+  
+    footer >nav > a {
+      color: var(--branco);
+      font-size: 32px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    nav > a:hover {
+      color: var(--verdeClaro);
+      transition: 0.3s;
+    }
+  
+    footer > a > .fa-instagram {
+      background-color: var(--branco);
+      color: var(--verdeEscuro);
+      font-size: 64px;
+      padding: 16px;
+      border-radius: 16px;
+    }
+  
+    footer > a > .fa-instagram:hover {
+      background-color: var(--verde);
+      color: var(--branco);
+      transition: 0.3s;
+    }
+  }
+  

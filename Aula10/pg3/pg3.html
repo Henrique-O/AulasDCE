@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="imgspg3/iconeDCEBranco.png" type="image/x-icon">
+    <link rel="stylesheet" href="pg3.css">
+    <title>Resumo aulas pg 3</title>
+</head>
+
+<header>
+    <div>
+        <a href="../index/index.html">
+            <img src="imgsPg3/iconeDCEBranco.png" alt="Logo DCE" class="logo">
+            <span class="textLogo">Mova-Se<br>o DCE é seu</span>
+        </a>
+
+    </div>
+
+    <nav>
+        <a href="../index/index.html">Resumo&nbsp;HTML</a>
+        <a href="../pg2/pg2.html">Resumo&nbsp;CSS</a>
+        <a href="../pg3/pg3.html">Resumo&nbsp;Geral</a>
+        <a href="../pgProjetoFinal/pgProjetoFinal.html">Projeto&nbsp;final</a>
+    </nav>
+
+    <a href="https://www.instagram.com/dcemovase/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+</header>
+
+<body>
+    <div class="pegaTudo">
+        <h1 class="title1">Tópicos importantes</h1>
+        <div class="aula1">
+            <div>
+                <h1>A importância de um layout flexivo (Recomendo ver pelo Pc)</h1>
+                <span>Flexbox permite criar layouts flexíveis em uma única dimensão (linha ou
+                    coluna),
+                    facilitando o alinhamento e distribuição de espaço entre os itens.</span>
+                <br><br>
+                <h2>justify-content: Start (Deixa no começo)</h2>
+                <div class="display1">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2>justify-content: Center (Deixa no centro)</h2>
+                <div class="display2">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2>justify-content: End (Deixa no fim)</h2>
+                <div class="display3">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2>justify-content: Space-Between (Afasta os elementos para o mais longe possível)</h2>
+                <div class="display4">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2>justify-content: Space-around (Espaça X entre os elementos e espaça X/2 nos cantos)</h2>
+                <div class="display5">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2>justify-content: Space-evenly (Espaça tudo por igual)</h2>
+                <div class="display6">
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                    <div class="caixa"></div>
+                </div>
+                <br><br>
+                <h2></h2>
+                <h2>flex-direction: column (Deixa em forma de coluna)</h2>
+                <div class="display7">
+                    <div class="caixa">1</div>
+                    <div class="caixa">2</div>
+                    <div class="caixa">3</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="title2">background image</h1>
+        <div class="aula2">
+            <div>
+                <h2>background image</h2>
+                <span>A propriedade background-image é usada em CSS para definir uma imagem de fundo para um elemento
+                    HTML.</span>
+                <br><br>
+                <span>Recomendo abrir o arquivo ou inspecionar o elemento e ver a propriedade sendo chamada no
+                    CSS.</span>
+                <br><br>
+                <h2>Sintaxe:</h2>
+                <span>background-image: url(CAMINHO DA IMAGEM);</span>
+                <br>
+                <span>E juntamente a ela usamos as propriedades "<strong>background-repeat: no-repeat;</strong>" para
+                    tiramos a repetição
+                    da imagem, a "<strong>background-position: center;</strong>" para posicionarmos certinho o elemento
+                    onde queremos, a
+                    "<strong>background-size: cover;</strong>" e "<strong>background-size: X% Y%;</strong>" para
+                    definirmos o tamanho e pegar todo o
+                    espaço disponivel</span>
+            </div>
+        </div>
+
+        <h1 class="title1">Parallax</h1>
+        <div class="aula3">
+            <div>
+                <h2>O que é</h2>
+                <span>O efeito parallax scrolling é uma técnica popular de design web que cria uma sensação de
+                    profundidade ao mover elementos em diferentes velocidades enquanto o usuário rola a página. Isso
+                    cria uma experiência visualmente interessante e imersiva.</span>
+                <br><br>
+                <div class="parallax"></div>
+                <br><br>
+                <h2>Pontos importantes</h2>
+                <span>O efeito parallax pode utilizar todas propriedades do background-image com o acréscimo do
+                    "<strong>background-attachment: fixed;</strong>" para FIXAR a imagem no fundo e assim criar o efeito
+                    acima. Juntamente
+                    usamos o "<strong>min-height: X px;</strong>" para definir uma altura para ele, no caso desse de
+                    cima utilizamos 200px.</span>
+                <br><br>
+                <span>Podemos adicionar textos dentro do parallax, assim adicionando um elemento visual bem
+                    interessante. Exemplo:</span>
+                <br><br>
+                <div class="parallax2">
+
+                    <span>Venha nos conhecer</span>
+
+                </div>
+            </div>
+        </div>
+
+        <h1 class="title3">Gradiente</h1>
+
+        <div class="aula1">
+            <span class="text">Você pode usar gradientes em CSS para adicionar um efeito de transição suave entre duas ou mais cores
+                em
+                elementos HTML, como fundos, bordas ou textos. Existem dois tipos principais de gradientes em CSS:
+                gradientes lineares e gradientes radiais.</span>
+            <br><br>
+            <h1 class="title2">Sintaxe</h1>
+            <span>"<strong>background: linear-gradient(to POSIÇÃO, COR1, COR2);</strong>" Para o gradiente
+                linear.</span>
+            <br><br>
+
+            <h2>POSIÇÃO</h2>
+            <span>É a direção que voce quer o gradiente, temos as opções mais simples: <strong>Top (cima), Right
+                    (Direita), Bottom (Abaixo), Left (Esquerda)</strong>.</span>
+            <br><br>
+            <span>Temos as mais especificas para os cantos: <strong>Top Right(Superior Direita), Top Left(Superior
+                    Esquerda), bottom Right(Inferior Eireita), bottom Left(Inferior Esquerda)</strong>.</span>
+            <br><br>
+            <h2>COR1 e COR2</h2>
+            <span>Cores que desejamos, a COR1 sendo onde começa e a COR2 onde termina. OBS usar cores com #
+                (hexadecimal): <strong>#ffffff, #000000</strong>.</span>
+            <br><br>
+            <div class="gradientes">
+                <div class="gradienteLinear"></div>
+                <div class="gradienteLinear2"></div>
+                <div class="gradienteLinear3"></div>
+                <div class="gradienteLinear4"></div>
+            </div>
+            <br><br>
+            <div class="gradientes">
+                <div class="gradienteLinear5"></div>
+                <div class="gradienteLinear6"></div>
+                <div class="gradienteLinear7"></div>
+                <div class="gradienteLinear8"></div>
+            </div>
+            <br><br>
+            <span>"<strong>background: radial-gradient(to POSIÇÃO, COR1, COR2);</strong>" Para o gradiente radial</span>
+            <br><br>
+            <div class="gradientes">
+                <div class="gradienteRadial"></div>
+                <div class="gradienteRadial2"></div>
+                <div class="gradienteRadial3"></div>
+                <div class="gradienteRadial4"></div>
+                <div class="gradienteRadial5"></div>
+                <div class="gradienteRadial6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f07fda0370.js" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div>
+        <a href="../index/index.html">
+            <img src="imgsPg3/iconeDCEBranco.png" alt="Logo DCE" class="logo">
+            <span class="textLogo">Mova-Se<br>o DCE é seu</span>
+        </a>
+
+    </div>
+
+    <nav>
+        <a href="../index/index.html">Resumo&nbsp;HTML</a>
+        <a href="../pg2/pg2.html">Resumo&nbsp;CSS</a>
+        <a href="../pg3/pg3.html">Resumo&nbsp;Geral</a>
+        <a href="../pgProjetoFinal/pgProjetoFinal.html">Projeto&nbsp;final</a>
+    </nav>
+
+    <a href="https://www.instagram.com/dcemovase/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</footer>
+
+</html>
