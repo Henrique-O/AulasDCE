@@ -1,0 +1,43 @@
+/* NÃO EXPLICADO TUDO ISSO EM SALA, VAI SER EXPLICADO DPS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --cinzaClaro: #D8D8D8;
+}
+
+body {
+    background-color: var(--cinzaClaro);
+}
+
+body > div {
+    background-color: var(--branco);
+    padding: 32px;
+    margin: 64px 180px;
+    border-radius: 16px
+}
+
+body > div > div > div{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+a {
+    background-color: var(--cinzaClaro);
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: black;
+    color: var(--branco);
+    transition-duration: 1s;
+}

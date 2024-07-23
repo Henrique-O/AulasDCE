@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* Defini 5 cores padrões e posso alterar TUDO onde ela foi chamada só alterando 1 coisa */
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --fundo: #00243F;
+    --fundoSecundario: #005C52;
+    --interacao: #90C20E;
+}
+
+/* :root {
+    --NomeCor1: #000000;
+} */
+
+header {
+    display: flex; /* Deixa flexivel */
+    align-items: center; /* Alinha os itens*/
+    justify-content: space-between; /* Separa os itens*/
+    background-color: var(--fundo);
+    padding: 32px;
+}
+
+header > a {
+    background-color: var(--fundoSecundario);
+    padding: 10px 4px 8px 4px;
+    border-radius: 16px;
+}
+
+header > a:hover {
+    background-color: var(--interacao);
+    transition: 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fundoSecundario);
+}
+
+nav > a {
+    color: var(--branco);
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1; /* item flexível crescer e ocupar o espaço disponível */
+    padding: 32px 0;
+}
+
+nav > a:hover{
+    color: var(--fundo);
+    background-color: var(--interacao);
+    transition: 0.5s;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+body > div {
+    margin: 64px 180px;
+}
+
+h1 {
+    color: var(--branco);
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+
+p {
+    color: var(--branco);
+    text-align: justify;
+    font-size: 30px;
+}
+
+.class {
+    color: var(--interacao);
+}
+
+#id {
+    color: orange;
+}
+
+.backgroundColor {
+    background-color: var(--interacao);
+    padding: 8px;
+}
+
+.backgroundColor > span {
+    color: var(--fundo);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fontSize > span {
+    font-size: 50px;
+}
+
+.fontSizeText {
+    
+    font-size: 60px;
+}
+
+.fontWeight {
+    font-weight:700;
+}
+
+.textS {
+    text-align: start;
+}
+
+.textC {
+    text-align: center;
+}
+
+.textE {
+    text-align: end;
+}
+
+.link:link {
+    color: blue;
+}
+
+.visited:visited{
+    color: white;
+}
+
+.hover:hover{
+    color: red;
+}
+
+.active:active {
+    color: pink;
+}
+
+.margen {
+    background-color: var(--interacao);
+    margin: 100px;
+}
+
+.padding {
+    background-color: var(--interacao);
+    padding: 100px;
+    margin-bottom: 32px;
+}
+
+.fontFamily {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body > div > a {
+    color: var(--branco);
+    font-size: 40px;
+}
+
+body > div > a:hover {
+    color: var(--interacao);
+    transition: 0.5s;
+}
+
+body > div > ul > li {
+    color: var(--branco);
+    font-size: 40px;
+    margin-left: 32px;
+}
+
+hr {
+    height: 10px;
+    background-color: var(--interacao);
+    border: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fundo);
+    padding: 32px;
+}
+
+footer > .asserts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer > .asserts> a {
+    background-color: var(--fundoSecundario);
+    padding: 10px 4px 8px 4px;
+    border-radius: 16px;
+}
+
+footer> .asserts > a:hover {
+    background-color: var(--interacao);
+    transition: 0.5s;
+}
+
+footer > .footerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+footer > .footerNav > a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer > .footerNav > a:hover {
+    color: var(--interacao);
+    text-decoration: underline;
+    transition: 0.5s;
+}

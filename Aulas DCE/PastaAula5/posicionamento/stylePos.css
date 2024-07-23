@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* Feito para tirar os espaçamentos padrões*/
+
+:root{
+    --branco: #F5EFE6;
+    --bege:#E8DFCA;
+    --verde: #4F6F52;
+    --verdeEscuro: #1A4D2E;
+
+    --cursivo: "Shadows Into Light", cursive;
+    --roboto: "Roboto", sans-serif;
+} /* Root com as cores e fontes que vamos utilizar nesse site */
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    font-family: var(--cursivo);
+    /*margin: 0 180px;  Espaça para FORA e por isso quebra o fundo */
+    padding: 0 180px; /* Espaça para DENTRO e por isso da certo */
+    /* margin-top: 300px; Descomentar para mostrar */
+}
+
+header > .fa-instagram {
+    font-size: 30px;
+    color: var(--verdeEscuro);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verdeEscuro);
+    padding: 0 180px;
+}
+
+nav > a {
+    color: var(--branco);
+    font-family: var(--cursivo);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1; /* item flexível crescer e ocupar o espaço disponível */
+    padding: 32px 0;
+    margin-top: 60px; /* Um jeito de resolver */
+}
+
+nav > a:hover {
+    background-color: var(--verde);
+}
+
+body > .inputs {
+    background-color: var(--branco);
+    font-family: var(--roboto);
+    padding: 64px 180px;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+.textInputs {
+    font-size: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h2 {
+    margin: 16px 0;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+li {
+    font-size: 25px;
+}
+
+.paiR {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 64px 0 64px 180px; /* Adiciona uma margin*/
+  }
+  
+  .filhoR {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative; /* Se BASEIA na classe pai */
+    top: 50px; /* Espaça 50 pixeis pra cima da posição inicial que no caso é ENCOSTANDO no teto */
+    left: 50px; /* Espaça 50 pixeis pra esquerda da posição inicial que no caso é ENCOSTANDO na esquerda */
+  }
+
+hr {
+    height: 10px;
+    background-color: var(--verdeEscuro);
+    border: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 32px;
+}
+
+footer > .asserts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer > .asserts> a {
+    color: var(--verdeEscuro);
+    font-size: 60px;
+}
+
+footer> .asserts > a:hover {
+    color: var(--verde);
+    transition: 0.5s;
+}
+
+footer > .footerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+footer > .footerNav > a {
+    color: var(--verdeEscuro);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer > .footerNav > a:hover {
+    color: var(--verde);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+

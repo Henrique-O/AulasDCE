@@ -1,0 +1,15 @@
+/* Para estilizar uma tag chama-se ela e abre e fecha chaver {} e faz a estilização como desejar*/
+
+body { /* Abre a tag body e estiliza com um fundo preto e cor de letra branco*/
+    background-color: black;
+    color: white;
+}
+
+a { /* Abre a tag âncora e estiliza as letras com a cor branca OBS: é possível tirar o sublinhado do link utilizando "text-decoration: none;" */
+    color: white;
+}
+
+/*FEITO SOMENTE PARA MELHOR A ESTRUTURA DO SITE E NÃO FALADO EM AULA, SERÁ FALADO NO FUTURO*/
+.allContent {
+    display: flex;
+}

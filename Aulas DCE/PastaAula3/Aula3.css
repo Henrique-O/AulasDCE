@@ -1,0 +1,80 @@
+* { /* Utilizamos ela para PEGAR TUDO do nosso site e definiar margin 0, assim, nos livrando da formatação que todo site já vem */
+    margin: 0;
+}
+
+/* O que é o display flex e pq ele é TÃO importante
+
+Com o display: flex, você pode organizar os elementos filhos de um contêiner (geralmente um <div> ou outro elemento de contêiner) em uma única linha ou em uma única coluna, e controlar como esses elementos se ajustam e se distribuem dentro desse contêiner.
+
+Também é possível: 
+Organizar em Linha ou Coluna: Definir se os elementos filhos devem ser organizados em linha (horizontalmente) ou em coluna (verticalmente) dentro do contêiner.
+
+Alinhar e Distribuir Espaços: Distribuir os elementos filhos igualmente ao longo do eixo principal (linha ou coluna) e controlar o espaçamento entre eles, bem como o alinhamento deles dentro do contêiner.
+
+Controlar a Largura e a Altura: Ajustar dinamicamente a largura e a altura dos elementos filhos para que se ajustem ao tamanho do contêiner de forma flexível.
+
+Reorganização Automática: Os elementos filhos podem ser reorganizados automaticamente para se ajustarem a diferentes tamanhos de tela ou dispositivos, tornando o layout responsivo.
+
+*/
+
+header {
+    display: flex; /* Falado acima */
+    align-items: center;  /* ALINHA os elementos baseado no centro do maior elemnto */ 
+    justify-content: space-between; /*ESPAÇA TODOS os elementos do container, nesse caso o space-between joga cada um pra um canto */
+}
+
+.iconeInsta { /*Classe criada para o elemento do ícone do insta*/
+    background-color: palevioletred;
+    padding: 32px;
+}
+
+.iconeInsta:hover {/* Adiciona um efeito que muda a cor quando o mouse esta SOBRE o elemento*/
+    background-color: blueviolet;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly; /*ESPAÇA TODOS os elementos do container, nesse caso o space-evenly espaça corretamente entre os elementos e TAMBÉM espaço fOra dos elementos */
+    background-color: black;
+    padding: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section { /* Modifica AMBAS as sections do body*/
+    display: flex;
+    justify-content: center;
+}
+
+#section1 { /* Modifica SOMENTE a section1 */
+    background-color: blue;
+}
+
+.Cachorro { /* Modifica SOMENTE a imagem com esse nome */
+    background-color: aquamarine;
+    padding: 32px;
+}
+.Cachorro:hover { /* Adiciona um efeito de blur na imagem */
+    background-color: pink;
+    filter: blur(2px);
+}
+
+.section2 { /* Modifica SOMENTE a section2 */
+    background-color: red;
+}
+
+hr {  /* Damos uma altura de 10 pixeis, colocamos cor e tiramos as bordas que vem por padrão*/
+    height: 10px;
+    background-color: blueviolet;
+    border: none;
+}
+
+footer { /* Centraliza e espaça os elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

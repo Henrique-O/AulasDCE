@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azulEscuro: #363062;
+    --azul: #435585;
+    --azulClaro: #818FB4;
+    --branco: #FFFFFF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--azulEscuro);
+    padding: 48px 180px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+}
+
+header > nav > a {
+    color: var(--branco);
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    font-size: 48px;
+    background-color: var(--azulClaro);
+    color: var(--branco);
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.fa-instagram:hover {
+    background-color: var(--azul);
+    transition: 0.5s;
+}
+
+.pegaTudo {
+    background-color: var(--azul);
+    padding: 64px 180px;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--branco);
+    margin-bottom: 16px;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.div1 > div {
+    width: 50%;
+}
+
+p {
+    font-size: 32px;
+    color: var(--branco);
+}
+
+.subDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subDiv1 > div {
+    display: flex;
+    gap: 80px;
+    margin-top: 24px;
+}
+
+.cadastrar {
+    background-color: var(--azulClaro);
+    color: var(--branco);
+    font-size: 24px;
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+}
+
+.entrar {
+    background-color: transparent;
+    color: var(--branco);
+    font-size: 24px;
+    padding: 16px;
+    border: 2px solid var(--azulEscuro);
+    border-radius: 32px;
+}
